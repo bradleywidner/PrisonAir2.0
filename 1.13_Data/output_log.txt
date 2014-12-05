@@ -1,0 +1,36 @@
+Initialize engine version: 4.6.0b20 (a3ecf55f1347)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\Prison Air\1.13_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\Prison Air\1.13_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\Prison Air\1.13_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading G:\Prison Air\1.13_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: G:\Prison Air\1.13_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\Prison Air\1.13_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\Prison Air\1.13_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\Prison Air\1.13_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.054 seconds
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: G:\Prison Air\1.13_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\Prison Air\1.13_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 3.675729 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 239.
+Total: 0.570212 ms (FindLiveObjects: 0.015005 ms CreateObjectMapping: 0.009258 ms MarkObjects: 0.177193 ms  DeleteObjects: 0.032246 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.628638 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3006.
+Total: 1.942105 ms (FindLiveObjects: 0.209120 ms CreateObjectMapping: 0.040547 ms MarkObjects: 0.650029 ms  DeleteObjects: 0.439312 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported

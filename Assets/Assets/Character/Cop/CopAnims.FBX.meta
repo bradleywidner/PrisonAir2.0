@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: a3b8a37f81498f84095bac3f2d36fa0d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bone002
+    100002: Bone005
+    100004: Bone009
+    100006: Bone009(mirrored)
+    100008: Bone012
+    100010: Bone012(mirrored)
+    100012: Cop
+    100014: //RootNode
+    100016: Head
+    100018: L_Arm
+    100020: L_Elbow
+    100022: L_Foot
+    100024: L_Foot_ctrl
+    100026: L_Hand_ctrl
+    100028: L_Hips
+    100030: L_Knee
+    100032: Master_ctrl
+    100034: MiddleSpine
+    100036: R_Arm
+    100038: R_Elbow
+    100040: R_Foot
+    100042: R_Foot_ctrl
+    100044: R_Hand_ctrl
+    100046: R_Hips
+    100048: R_Knee
+    100050: Root
+    100052: Root_ctrl
+    400000: Bone002
+    400002: Bone005
+    400004: Bone009
+    400006: Bone009(mirrored)
+    400008: Bone012
+    400010: Bone012(mirrored)
+    400012: Cop
+    400014: //RootNode
+    400016: Head
+    400018: L_Arm
+    400020: L_Elbow
+    400022: L_Foot
+    400024: L_Foot_ctrl
+    400026: L_Hand_ctrl
+    400028: L_Hips
+    400030: L_Knee
+    400032: Master_ctrl
+    400034: MiddleSpine
+    400036: R_Arm
+    400038: R_Elbow
+    400040: R_Foot
+    400042: R_Foot_ctrl
+    400044: R_Hand_ctrl
+    400046: R_Hips
+    400048: R_Knee
+    400050: Root
+    400052: Root_ctrl
+    4300000: Cop
+    7400000: haha
+    7400002: Cheer
+    7400004: Idle
+    9500000: //RootNode
+    13700000: Cop
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Cheer
+      takeName: Take 001
+      firstFrame: 126
+      lastFrame: 217
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cop
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Hand_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Hand_ctrl
+        weight: 1
+      - path: Master_ctrl/Root_ctrl
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/Bone002
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee/L_Foot/Bone009(mirrored)
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/Head
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/Head/Bone005
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm/L_Elbow/Bone012
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm/R_Elbow/Bone012(mirrored)
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee/R_Foot/Bone009
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: haha
+      takeName: Take 001
+      firstFrame: 217
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cop
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Hand_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Hand_ctrl
+        weight: 1
+      - path: Master_ctrl/Root_ctrl
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/Bone002
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee/L_Foot/Bone009(mirrored)
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/Head
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/Head/Bone005
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm/L_Elbow/Bone012
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm/R_Elbow/Bone012(mirrored)
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee/R_Foot/Bone009
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 127
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cop
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Hand_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Hand_ctrl
+        weight: 1
+      - path: Master_ctrl/Root_ctrl
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/Bone002
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/L_Hips/L_Knee/L_Foot/Bone009(mirrored)
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/Head
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/Head/Bone005
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/L_Arm/L_Elbow/Bone012
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/MiddleSpine/R_Arm/R_Elbow/Bone012(mirrored)
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Root_ctrl/Root/R_Hips/R_Knee/R_Foot/Bone009
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
