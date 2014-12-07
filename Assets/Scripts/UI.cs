@@ -11,11 +11,11 @@ public class UI : MonoBehaviour
 
 	public static float MaxPower;
 
-	public static float TTMaxVelocity = 600.0f;
-	public static float TTMaxPower = 600.0f;
+	public static float TTMaxVelocity = 700.0f;
+	public static float TTMaxPower = 700.0f;
 
 	public static float MMMaxVelocity = 750.0f;
-	public static float MMMaxPower = 750.0f;
+	public static float MMMaxPower = 800.0f;
 
 	public static float FJMaxVelocity = 850.0f;
 	public static float FJMaxPower = 850.0f;
@@ -45,7 +45,7 @@ public class UI : MonoBehaviour
 	public Image Hit2;
 	public Image Hit3;
 	public Image Hit4;
-
+	private bool SpaceButtonClicked = false;
 	//public Image instructions;
 	//public float instructionsTimer = 5.0f;
 
@@ -62,6 +62,41 @@ public class UI : MonoBehaviour
 		//animationTest = GetComponent<AnimatingTest>();
 		CatapultArmScript = GetComponent<CatapultArm>();
 		nextPrisonerInlist.text = CopSetup.GetNextPrisonerName();
+	}
+	public void SpacebarButton()
+	{
+		SpacePressedCount++;
+		
+		if(SpacePressedCount == 2)
+		{
+			PlayVelocityBarFill = false;
+			if(CopSetup.GetNextPrisonerName().Equals("Magic Mike"))
+			{
+				MaxPower = MMMaxPower;
+				PowerValue = PowerFiller.fillAmount * MMMaxPower;
+				VelocityValue = VelocityFiller.fillAmount * MMMaxVelocity;
+			}
+			else if(CopSetup.GetNextPrisonerName().Equals("Tiny Tim"))
+			{
+				MaxPower = TTMaxPower;
+				PowerValue = PowerFiller.fillAmount * TTMaxPower;
+				VelocityValue = VelocityFiller.fillAmount * TTMaxVelocity;
+			}
+			else if(CopSetup.GetNextPrisonerName().Equals("Fat Joe"))
+			{
+				MaxPower = FJMaxPower;
+				PowerValue = PowerFiller.fillAmount * FJMaxPower;
+				VelocityValue = VelocityFiller.fillAmount * FJMaxVelocity;
+			}
+			//PowerValue = PowerFiller.fillAmount * MaxPower;
+			//VelocityValue = VelocityFiller.fillAmount * MaxVelocity;
+			CatapultArmScript.LaunchCriminal();
+			
+		}
+		else if(SpacePressedCount == 1)
+		{
+			PlayPowerBarFill = false;
+		}
 	}
 	
 	// Update is called once per frame

@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     const int LEFT = 2;
     const int RIGHT = 3;
 	public float colorfloat = 0.5f;
+	private bool AisPressed = false;
+	private bool DisPressed = false;
     //public GameObject InvisibleColliders;
 
     //public BoxCollider StopsForce;
@@ -35,6 +37,22 @@ public class Movement : MonoBehaviour
 	{
 
 	}
+	public void Aclicked()
+	{
+		AisPressed = true;
+	}
+	public void Dclicked()
+	{
+		DisPressed = true;
+	}
+	public void AUnclicked()
+	{
+		AisPressed = false;
+	}
+	public void DUnclicked()
+	{
+		DisPressed = false;
+	}
 
 	void Update () 
     {
@@ -47,22 +65,22 @@ public class Movement : MonoBehaviour
 		RotateValueInYAxisForSpawnPoint = spawnPoint.rotation.y;
 		// DO NOT EVER DELETE THIS
       
-        if (Input.GetKey("a")) // Turn Catapault Left 
+		if (Input.GetKey("a") || AisPressed == true) // Turn Catapault Left 
         {
-            Turn(LEFT);
+            Turn(1);
 			colorSwap("Green", "InputAButton");
 
         }
-        else if (Input.GetKey("d")) // Turn Catapault Right
+		else if (Input.GetKey("d")|| DisPressed == true) // Turn Catapault Right
         {            
-            Turn(RIGHT);
+            Turn(2);
 			colorSwap("Green", "InputDButton");
         }
-		if(Input.GetKeyUp("a"))
+		if(Input.GetKeyUp("a")|| AisPressed == true)
 		{
 			colorSwap("Grey", "InputAButton");
 		}
-		else if(Input.GetKeyUp("d"))
+		else if(Input.GetKeyUp("d")|| DisPressed == true)
 		{
 			colorSwap("Grey", "InputDButton");
 		}
@@ -119,7 +137,7 @@ public class Movement : MonoBehaviour
 		//Debug.Log ("Spawn Point: " + RotateValueInYAxisForSpawnPoint);
         switch (Direction)
         {
-            case LEFT:
+            case 1:
                 if (RotateValueInYAxis >= -0.3)
                 {
                     catapultMarker.transform.Rotate(Vector3.down * (RotationSpeed * Time.deltaTime));
@@ -129,7 +147,7 @@ public class Movement : MonoBehaviour
 					spawnPoint.Rotate(Vector3.down * (RotationSpeed * Time.deltaTime));
 				}
                 break;
-            case RIGHT:
+            case 2:
                 if (RotateValueInYAxis <= 0.3)
                 {
                     catapultMarker.transform.Rotate(Vector3.up * (RotationSpeed * Time.deltaTime));
@@ -142,6 +160,7 @@ public class Movement : MonoBehaviour
                 break;
         }
     }
+
     /*
     void TransformCollidersOnMove()
     {
