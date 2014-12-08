@@ -74,8 +74,6 @@
      <Compile Include="Assets\Scripts\MegaScore.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
-     <Compile Include="Assets\Scripts\Plenko\MovementPlenko.cs" />
      <Compile Include="Assets\Scripts\PrisonAudio.cs" />
      <Compile Include="Assets\Scripts\PrisonObstacle.cs" />
      <Compile Include="Assets\Scripts\ScoreScreen.cs" />
@@ -83,7 +81,6 @@
      <Compile Include="Assets\Scripts\limbStretchTest.cs" />
      <None Include="Assets\UnityAssetStore\Boltset\readme.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
-     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
