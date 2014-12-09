@@ -27,7 +27,9 @@ public class ScoreScreen : MonoBehaviour
 	const int MISSES_TEXT = 		21;
 	const int MULTIPLER_TEXT = 		22;
 	const int BOLT = 				23;
-	
+	const int PRISON_BED = 			24;
+	const int CARDBOARD = 			25;
+
 	public Text spikeText;
 	public Text fireRingText;
 	public Text bowlingPinText;
@@ -35,13 +37,12 @@ public class ScoreScreen : MonoBehaviour
 	public Text towerText;
 	public Text spotLightText;
 	public Text toiletText;
-
-    public Text ropeSoapText;
+	public Text cardboardText;
     public Text prisonBarsText;
+	public Text prisonBedText;
 	public Text boltText;
-    //public Text washingMachineText;
-    public Text benchPressText;
     public Text prisonAlarmText;
+	public Text explosiveBarrelText;
 
 	public Text missesText;
 	public Text bonusesText;
@@ -49,6 +50,8 @@ public class ScoreScreen : MonoBehaviour
 	public Text finalScore;
 	void Start () 
 	{
+		explosiveBarrelText.text = PrisonObstacle.scorehitCount[EXPLOSIVE_BARREL].ToString();
+		cardboardText.text = PrisonObstacle.scorehitCount[CARDBOARD].ToString();
 		spikeText.text = PrisonObstacle.scorehitCount[SPIKES].ToString();
 		fireRingText.text = PrisonObstacle.scorehitCount[FIRE_RING].ToString();
 		bowlingPinText.text = PrisonObstacle.scorehitCount[BOWLING_PINS].ToString();
@@ -56,13 +59,10 @@ public class ScoreScreen : MonoBehaviour
 		towerText.text = PrisonObstacle.scorehitCount[TOWER].ToString();
 		spotLightText.text = PrisonObstacle.scorehitCount[SPOTLIGHT].ToString();
 		toiletText.text = PrisonObstacle.scorehitCount[TOILET].ToString();
-
-        ropeSoapText.text = PrisonObstacle.scorehitCount[ROPE_SOAP].ToString();
-        prisonBarsText.text = PrisonObstacle.scorehitCount[PRISON_BARS].ToString();
 		boltText.text = PrisonObstacle.scorehitCount[BOLT].ToString ();
-       	//washingMachineText.text = PrisonObstacle.scorehitCount[WASHING_MACHINE].ToString(); ;
-        benchPressText.text = PrisonObstacle.scorehitCount[BENCH_PRESS_BAR].ToString(); ;
-        prisonAlarmText.text = PrisonObstacle.scorehitCount[PRISON_ALARM].ToString(); ;
+		prisonAlarmText.text = PrisonObstacle.scorehitCount[PRISON_ALARM].ToString(); 
+        prisonBarsText.text = PrisonObstacle.scorehitCount[PRISON_BARS].ToString();
+		prisonBedText.text = PrisonObstacle.scorehitCount[PRISON_BED].ToString();
 
         missesText.text = "Misses" + "\n" + PrisonObstacle.scorehitCount[MISSES_TEXT].ToString();
 		bonusesText.text = "Bonuses" + "\n" + PrisonObstacle.scorehitCount[BONUSES_TEXT].ToString();

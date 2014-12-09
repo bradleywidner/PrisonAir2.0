@@ -1,11 +1,17 @@
 using UnityEngine;
 using System.Collections;
 
-public class DetonatorSprayHelper : MonoBehaviour {
-public float startTimeMin = 0;
-public float startTimeMax = 0;
-public float stopTimeMin = 10;
-public float stopTimeMax = 10;
+public class DetonatorSprayHelper : MonoBehaviour 
+{
+private float startTimeMin = 0;
+private float startTimeMax = 0;
+private float stopTimeMin = 1.45f;
+private float stopTimeMax = 1.45f;
+
+	//public float startTimeMin = 0; 0.2
+	//public float startTimeMax = 0; 1
+	//public float stopTimeMin = 10; 7
+	//public float stopTimeMax = 10; 9.5
 
 public Material firstMaterial;
 public Material secondMaterial;

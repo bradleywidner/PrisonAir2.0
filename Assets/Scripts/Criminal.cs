@@ -12,6 +12,7 @@ public class Criminal : MonoBehaviour
 	private GameObject frontWall;
 
 	private const int HIT_MAX = 1;
+
 	private int bowlingPinHitCount = 0;
 	private int spikesHitCount = 0;
 	private int fireRingHitCount = 0;
@@ -26,6 +27,8 @@ public class Criminal : MonoBehaviour
     private int prisonAlarmHitCount = 0;
 	private int explosiveBarrelHitCount = 0;
 	private int boltHitCount = 0;
+	private int prisonBedHitCount = 0;
+	private int cardboardHitCount = 0;
 
 	private bool hitTerrain = false;
 	private bool hitFrontWall = false;
@@ -98,6 +101,34 @@ public class Criminal : MonoBehaviour
 						if(bowlingPinHitCount <= HIT_MAX)
 						{
 							//Debug.Log ("Bowling Pin Hit!");
+							PrisonObstacle.SetHighestHeightAchievedInArc(HighestHeightAchieved);
+							ApplyScore = true;
+						}
+						else
+						{
+							ApplyScore = false;
+						}
+					}
+					else if(PrisonObstacle.GetObstacleTag().Contains("PrisonBed"))
+					{	
+						prisonBedHitCount++;
+						if(prisonBedHitCount <= HIT_MAX)
+						{
+							Debug.Log ("PrisonBed Hit!");
+							PrisonObstacle.SetHighestHeightAchievedInArc(HighestHeightAchieved);
+							ApplyScore = true;
+						}
+						else
+						{
+							ApplyScore = false;
+						}
+					}
+					else if(PrisonObstacle.GetObstacleTag().Contains("Cardboard"))
+					{	
+					    cardboardHitCount++;
+						if(cardboardHitCount <= HIT_MAX)
+						{
+							Debug.Log ("Cardboard Hit!");
 							PrisonObstacle.SetHighestHeightAchievedInArc(HighestHeightAchieved);
 							ApplyScore = true;
 						}
@@ -291,6 +322,7 @@ public class Criminal : MonoBehaviour
 					}
 					else if (PrisonObstacle.GetObstacleTag().Contains("PrisonAlarm"))
 					{
+						prisonAlarmHitCount++;
 						if (prisonAlarmHitCount <= HIT_MAX)
 						{
 							Debug.Log("PrisonAlarm Hit!");
