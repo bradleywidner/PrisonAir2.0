@@ -6,9 +6,9 @@ public class MegaScore : MonoBehaviour
 {
 	const int MULTIPLER_TEXT = 		22;
 	public Text doubleScore;
-	public Text onABoat;
+	//public Text onABoat;
 
-	public Collider onABoatCollider;
+	//public Collider onABoatCollider;
 	private float timer = 3.0f;
 	private bool reset = false;
 
@@ -28,7 +28,7 @@ public class MegaScore : MonoBehaviour
 			if(timer <= 0)
 			{
 				doubleScore.enabled = false;
-				onABoat.enabled = false;
+				//onABoat.enabled = false;
 				reset = false;
 				timer = 3f;
 			}
