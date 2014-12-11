@@ -1,0 +1,64 @@
+Initialize engine version: 4.6.0b20 (a3ecf55f1347)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro K2000  (ID=0xffe)
+    Vendor:   NVIDIA
+    VRAM:     1994 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.049 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\GitHub\PrisonAir2.0\PrisonAir3.0FinalBuild_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 8.183943 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 267.
+Total: 1.393489 ms (FindLiveObjects: 0.029684 ms CreateObjectMapping: 0.017754 ms MarkObjects: 0.260221 ms  DeleteObjects: 0.051045 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.436107 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4305.
+Total: 1.562717 ms (FindLiveObjects: 0.216943 ms CreateObjectMapping: 0.037451 ms MarkObjects: 0.512675 ms  DeleteObjects: 0.448868 ms)
+
+PlayAnimation(): Idle
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+PlayPowerAnimationAndInstantiate(): LamePower
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Grunt 2 True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Terrain Hit!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Grunt 2 True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Grunt 2 True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Grunt 2 True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

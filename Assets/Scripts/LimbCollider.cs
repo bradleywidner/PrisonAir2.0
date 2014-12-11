@@ -39,6 +39,11 @@ public class LimbCollider : MonoBehaviour
 		 	 Collision.gameObject.tag.Contains("FrontWall")||
 			 Collision.gameObject.tag.Contains("Catapult")||
 		     Collision.gameObject.tag.Contains ("Bolt")||
+		     Collision.gameObject.tag.Contains ("PrisonBed")||
+		     Collision.gameObject.tag.Contains ("Cardboard")||
+		     Collision.gameObject.tag.Contains ("PrisonAlarm")||
+			 Collision.gameObject.tag.Contains ("Boat")||
+		     Collision.gameObject.tag.Contains ("ExplosiveBarrel")||
 		     Collision.gameObject.tag.Contains("PRISON_FLOOR")))
 			{
 					//Debug.Log (gameObject.name + "Collided With:" + Collision.gameObject.name);

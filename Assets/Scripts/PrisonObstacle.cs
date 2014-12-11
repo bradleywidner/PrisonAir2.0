@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PrisonObstacle : MonoBehaviour
 {
-	public static int[] scorehitCount = new int[24];
+	public static int[] scorehitCount = new int[27];
 
 	const int SPIKES =              0;
 	const int FIRE_RING =           1;
@@ -28,6 +28,9 @@ public class PrisonObstacle : MonoBehaviour
 	const int MISSES_TEXT = 		21;
 	const int MULTIPLER_TEXT = 		22;
 	const int BOLT = 				23;
+	const int PRISON_BED = 			24;
+	const int CARDBOARD = 			25;
+	const int BOAT = 				26;
 
 	public string ObstacleTag;
 	public int ObstacleType;
@@ -104,7 +107,7 @@ public class PrisonObstacle : MonoBehaviour
 				scorehitCount[SPIKES] += 1;
                 break;
             case FIRE_RING:
-                ObstacleHitScore = 30;
+                ObstacleHitScore = 20;
                 TotalArcScore = (int)(ObstacleDistancePastWall + HighestHeightAchievedInArc + ObstacleHitScore);
 				scorehitCount[BONUSES_TEXT] += (int)(HighestHeightAchievedInArc + ObstacleDistancePastWall);
 				scorehitCount[FIRE_RING] += 1;
@@ -157,6 +160,27 @@ public class PrisonObstacle : MonoBehaviour
 				TotalArcScore = (int)(HighestHeightAchievedInArc + ObstacleHitScore + ObstacleDistancePastWall);
 				scorehitCount[BONUSES_TEXT] += (int)(HighestHeightAchievedInArc + ObstacleDistancePastWall);
 				scorehitCount[BOLT] += 1;
+				break;
+			case PRISON_BED:
+				Debug.Log("PrisonObstacle.cs: PrisonBed Case");
+				ObstacleHitScore = 12;
+				TotalArcScore = (int)(HighestHeightAchievedInArc + ObstacleHitScore + ObstacleDistancePastWall);
+				scorehitCount[BONUSES_TEXT] += (int)(HighestHeightAchievedInArc + ObstacleDistancePastWall);
+				scorehitCount[PRISON_BED] += 1;
+				break;
+			case CARDBOARD:
+				Debug.Log("PrisonObstacle.cs: Cardboard Case");
+				ObstacleHitScore = 18;
+				TotalArcScore = (int)(HighestHeightAchievedInArc + ObstacleHitScore + ObstacleDistancePastWall);
+				scorehitCount[BONUSES_TEXT] += (int)(HighestHeightAchievedInArc + ObstacleDistancePastWall);
+				scorehitCount[CARDBOARD] += 1;
+				break;
+			case BOAT:
+				Debug.Log("PrisonObstacle.cs: Boat Case");
+				ObstacleHitScore = 20;
+				TotalArcScore = (int)(HighestHeightAchievedInArc + ObstacleHitScore);
+				//scorehitCount[BONUSES_TEXT] += (int)(HighestHeightAchievedInArc + ObstacleDistancePastWall);
+				scorehitCount[BOAT] += 1;
 				break;
 
 			// Hit per criminal

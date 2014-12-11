@@ -45,7 +45,7 @@ public class UI : MonoBehaviour
 	public Image Hit2;
 	public Image Hit3;
 	public Image Hit4;
-	private bool SpaceButtonClicked = false;
+	//private bool SpaceButtonClicked = false;
 	//public Image instructions;
 	//public float instructionsTimer = 5.0f;
 
